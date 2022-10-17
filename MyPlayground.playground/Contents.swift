@@ -4,7 +4,7 @@ import UIKit
 var greeting:String
 greeting = "Hello, playground"
 var name:String = "Phan Xuân Dũng"
-var age = 20
+var age = 10
 
 //Khai báo hằng số
 let dayLaHangSo : String
@@ -42,6 +42,21 @@ else if age > testSoTuoi
 else
 {
     print("Tuổi của \(name), là: \(age)")
+}
+
+//Switch
+switch age
+{
+case 1 :
+    print("Em bé!")
+    fallthrough
+case 10 :
+    print("cấp 1")
+    fallthrough
+case 20 :
+    print("Đã tốt nghiệp cấp 3")
+default :
+    print("Ngoài tuổi dấu mốc!!!")
 }
 
 //Biểu thức điều kiện
