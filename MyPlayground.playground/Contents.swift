@@ -4,7 +4,7 @@ import UIKit
 var greeting:String
 greeting = "Hello, playground"
 var name:String = "Phan Xuân Dũng"
-var age = 23
+var age = 20
 
 //Khai báo hằng số
 let dayLaHangSo : String
@@ -12,7 +12,7 @@ dayLaHangSo = "VIỆT NAM"
 
 //Tạo bí danh
 typealias so = Int      //Định nghĩa 'so' là kiểu 'Int'
-var testSo:so = 20
+var testSoTuoi:so = 20
 
 //Toán tử Optional
 var hocSinh:String? = nil
@@ -24,14 +24,28 @@ print(hocSinhGioi)
 //print(name)
 //print(age)
 //
-//print(testSo)
+//print(testSoTuoi)
 //print(dayLaHangSo)
 
 //Nội suy giá trị của biến trong chuôi in
 print("Họ và tên: \(name), tuổi: \(age), Quốc Tịch: \(dayLaHangSo)")
 
+//Câu lệnh rẽ nhánh
+if age < testSoTuoi
+{
+    print("Tuổi nhỏ hơn 20")
+}
+else if age > testSoTuoi
+{
+    print("Trên 20 tuổi")
+}
+else
+{
+    print("Tuổi của \(name), là: \(age)")
+}
+
 //Biểu thức điều kiện
-age > testSo ? print("Đã uống được rượu!!!") : print("Chưa uống được rượu!!!")
+age >= testSoTuoi ? print("Đã uống được rượu!!!") : print("Chưa uống được rượu!!!")
 
 //biểu_thức_1 ?? biểu_thức_2
 //Biểu thức kết hợp với ??, nếu biểu_thức_1 khác null thì lấy biểu_thức_1, ngược lại lấy giá trị từ biểu_thức_2
